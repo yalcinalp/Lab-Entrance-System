@@ -51,13 +51,6 @@ module lab3_2(
 	restrictionWarnMera=0;
 	restrictionWarnDigital=0;
 	
-	// BU 4 SATIRLIK YORUM SU ANKI ISIM VE ONEMLI 
-	//isFullMera isEmptyMera durumlarını ger clock cycle ın basında nasıl degismesi gerektigi hakkında bir yorumum yok, onu halledebilmem lazım
-	//isempty ve isfull durumlarını ekleme ve çıkarma ile degistirmem lazım ledlerin yanması icin ?
-	// sonucta fpga de bir sekilde mode 2 ya da 3 yapılacak, bu anlmada benim bir if else icinde onu da handle edebilmem lazım
-	// cıkıs yapmak isteyen bir ogrenci oldugunda da unlock ledini yakmalı mıyım 
-	
-	
 	tmp_var = smartCode[0] + smartCode[1] + smartCode[2] + smartCode[3] + smartCode[4];
 	
 	if(tmp_var % 2 == 1)
