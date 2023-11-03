@@ -16,8 +16,6 @@ module lab3_2(
 			output reg isEmptyDigital, //1: empty, 0:not empty
 			output reg unlockDigital //1:door is open, 0:closed
 	);
-	 
-	// You may declare your variables below
 	
 			reg isodd;
 			reg[2:0] tmp_var;
@@ -146,7 +144,7 @@ module lab3_2(
 		begin
 		//mod digitalde
 		
-		//BURALARIN İCLERİNİ DOLDURMAYI UNUTMA copy paste yap fakat isodd durumundaki farklı davranısı bil!
+		//BURALARIN İCLERİNİ DOLDURMAYI UNUTMA isodd durumundaki farklı davranısı bil!
 		
 			if(isFullDigital == 1)
 			begin
@@ -233,8 +231,7 @@ module lab3_2(
 		if(lab == 0)
 		begin
 		//mod Digitalde 
-		
-		//BURALARIN İCLERİNİ DOLDURMAYI UNUTMA!
+
 		//sayı azalt with just one kontrol which is "isemptylab"
 		
 			if(isEmptyDigital == 0) //Lab bos degil ise cikis yapılabilsin!
@@ -291,13 +288,12 @@ module lab3_2(
 	
 	//bu mod is just for clearing and locking the doors?
 	//Zaten en basta 0 ladıgımız icin bu duruma icerik yazmama gerek yok degil mi?
-	//BURALARIN İCLERİNİ DOLDURMAYI UNUTMA!
 	
 	
 	end 
 	
 	
-	end	//posedge clk icin olan end bu knk
+	end	//posedge clk icin olan end bu
 
 endmodule
 
